@@ -175,7 +175,7 @@ footer{
 @media only screen and (max-width: 580px) and (min-width: 370px) {
 
   main {
-    max-width: 470px;
+    max-width: 560px;
   }
 
   header{
@@ -188,11 +188,12 @@ footer{
   }
 
   .row {
-    max-width: 350px;
+    max-width: 540px;
+    margin: 0 10px;
   }
 
   .first-row {
-    max-width: 310px;
+    max-width: 350px;
     margin: 2.5rem auto;
   }
 
@@ -226,7 +227,7 @@ footer{
   }
 
   .first-row, .row {
-    max-width: 290px;
+    max-width: 300px;
   }
 
   .cover {
@@ -234,7 +235,7 @@ footer{
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 319px){
 
   header{
     max-width: 210px;
