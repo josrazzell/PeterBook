@@ -19,34 +19,28 @@ h1, h2 {
   font-weight: bold;
 }
 
-h3, .address, .email {
-  font-family: 'helvetica', arial, sans-serif;
-  font-weight: normal;
-}
-
 h1{
   font-size: 29px;
 }
 
 h2{
   font-size: 24px;
+  line-height: 2rem;
 }
 
 h3{
+  font-family: 'helvetica', arial, sans-serif;
+  font-weight: normal;
   font-size: 16px;
 }
 
-p{
+p {
   font-size: 19px;
-}
-
-div {
-  width: 100%;
 }
 
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #container, header, main, img, .line, .address, .email {
@@ -54,10 +48,21 @@ a {
    border: 0;
 }
 
+header {
+  height: 120px;
+  width: 220px;
+}
+
+main {
+  max-width: 570px;
+}
+
 footer{
    background-color: black;
-   display: block;
    text-align: center;
+   width: 100%;
+   height: 144px;
+   display: block;
 }
 
 #container{
@@ -65,25 +70,30 @@ footer{
    width: 100%;
 }
 
-/* Classes
-***************/
 .content {
-   height: auto;
-   text-align: justify;
+  height: auto;
+  text-align: justify;
 }
 
 .cover {
   display: flex;
+  max-width: 220px;
 }
 
 .first-row {
-   width: auto;
-   height: auto;
+  max-width: 420px;
+  height: auto;
+  margin: 4rem auto;
 }
+
 .row {
-   width: auto;
-   height: auto;
-   margin: 2rem auto;
+  height: auto;
+  max-width: 550px;
+  margin: 0 10px;
+}
+
+.paragraph {
+  line-height: 1.5;
 }
 
 .line {
@@ -96,12 +106,12 @@ footer{
 .headline {
   float: right;
   vertical-align: middle;
-  padding: 15px 0;
+  padding-top: 35px;
 }
 
-.logo{
+.logo {
   float: left;
-  padding: 20px 0;
+  padding-top: 35px;
   height: 60px;
 }
 
@@ -109,157 +119,24 @@ footer{
   color: #898989;
 }
 
+.v-centered {
+  padding-top: 40px;
+  margin: 0 10px;
+  line-height: 2.1rem;
+}
+
 .address, .email {
+  vertical-align: middle;
   font-size: 18px;
+  font-family: 'helvetica', arial, sans-serif;
+  font-weight: normal;
   color: white;
 }
 
-@media only screen and (min-width: 980px) { /*Desktop*/
+@media only screen and (max-width: 420px) and (min-width: 300px) {
 
-  main {
-    max-width: 990px;
-  }
-
-  header {
-    max-width: 225px;
+  .v-centered {
+    padding-top: 25px;
   }
 
-  footer {
-    padding: 20px;
-    line-height: 2rem;
-  }
-  .first-row {
-    max-width: 420px;
-    margin: 3rem auto;
-  }
-  .row {
-    width: 550px;
-  }
-  .cover {
-    max-width: 220px;
-  }
-
-}
-
-@media only screen and (max-width: 979px) and (min-width: 581px)
-{  /*For tablet*/
-
-  main {
-    max-width: 550px;
-  }
-
-  header{
-    max-width: 220px;
-    height: auto;
-  }
-  
-  footer{
-     padding: 15px;
-  }
-
-  .row {
-    max-width: 550px;
-  }
-
-  .first-row {
-    max-width: 420px;
-    margin: 3rem auto;
-  }
-  
-  .cover {
-    max-width: 220px;
-  }
-
-}
-
-@media only screen and (max-width: 580px) and (min-width: 370px) {
-
-  main {
-    max-width: 560px;
-  }
-
-  header{
-    max-width: 220px;
-    height: auto;
-  }
-  
-  footer{
-     padding: 15px;
-  }
-
-  .row {
-    max-width: 540px;
-    margin: 0 10px;
-  }
-
-  .first-row {
-    max-width: 350px;
-    margin: 2.5rem auto;
-  }
-
-  .cover {
-    max-width: 200px;
-  }
-
-}
-
-@media only screen and (max-width: 369px) and (min-width: 320px) {
-
-  header{
-    max-width: 220px;
-    height: auto;
-  }
-  
-  main {
-    max-width: 369px;
-  }
-
-  footer{
-     padding: 30px 10px;
-  }
-
-  h2 {
-    line-height: 130%;
-  }
-
-  .first-row {
-    margin: 2rem auto;
-  }
-
-  .first-row, .row {
-    max-width: 300px;
-  }
-
-  .cover {
-    max-width: 180px;
-  }
-}
-
-@media screen and (max-width: 319px){
-
-  header{
-    max-width: 210px;
-    height: auto;
-  }
-  
-  main {
-    max-width: 290px;
-  }
-
-  footer{
-    padding: 30px 10px;
-  }
-
-  h2 {
-    line-height: 130%;
-  }
-
-  .first-row, .row {
-    margin: 1rem;
-    max-width: 280px;
-  }
-
-  .cover {
-    max-width: 140px;
-  }
 }
