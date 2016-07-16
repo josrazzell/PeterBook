@@ -15,11 +15,6 @@ body {
    border: 0;
 }
 
-h1 {
-  font-size: 29px;
-  font-weight: bold;
-}
-
 h2 {
   font-size: 24px;
   font-weight: bold;
@@ -77,6 +72,11 @@ footer{
   vertical-align: middle;
   padding-top: 35px;
   padding-left: 10px;
+  font-size: 22px;
+}
+
+.loaded {
+  font-size: 29px;
 }
 
 .line {
