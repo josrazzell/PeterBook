@@ -9,5 +9,6 @@ $(document).ready(function(){
 function loadingFontSize() {
 
   $('#h1Header').toggleClass("loaded");
+  $('header').css("width", "220px")
 
 }
