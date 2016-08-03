@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  text-decoration: underline;
+}
+
 header {
   height: 120px;
   width: 255px;
